@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Oluwatimileyin Victor Adedigba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .gallery-intro {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem; margin-bottom: 2.5rem;
+      display: flex; align-items: center; gap: 1.5rem;
+    }
+    .gallery-intro-icon { font-size: 3rem; }
+    .gallery-intro-text { font-size: 0.95rem; color: #555; line-height: 1.7; }
+    .gallery-categories { display: flex; gap: 0.7rem; margin-bottom: 2rem; flex-wrap: wrap; }
+    .gal-cat-btn {
+      padding: 0.5rem 1.2rem; border-radius: 2rem;
+      border: 1.5px solid var(--border); background: var(--card-bg);
+      font-size: 0.83rem; font-weight: 500; cursor: pointer;
+      transition: all 0.2s; color: var(--mid);
+    }
+    .gal-cat-btn.active, .gal-cat-btn:hover {
+      background: var(--accent); color: #fff; border-color: var(--accent);
+    }
+    .masonry-grid {
+      columns: 3; column-gap: 1.2rem;
+    }
+    .gallery-item {
+      break-inside: avoid; margin-bottom: 1.2rem;
+      border-radius: 14px; overflow: hidden; position: relative;
+      cursor: pointer; transition: transform 0.2s;
+    }
+    .gallery-item:hover { transform: scale(1.02); }
+    .gallery-item-inner {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 14px; overflow: hidden;
+    }
+    .gallery-placeholder {
+      width: 100%; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 2rem; color: var(--mid); text-align: center;
+    }
+    .gallery-placeholder-icon { font-size: 3rem; margin-bottom: 0.8rem; }
+    .gallery-placeholder-label { font-size: 0.82rem; font-weight: 600; }
+    .gallery-placeholder-sub { font-size: 0.75rem; color: #aaa; margin-top: 0.2rem; }
+    .upload-cta {
+      background: linear-gradient(135deg, var(--accent), #c43e10);
+      border-radius: 20px; padding: 3rem; text-align: center; color: #fff;
+      margin-top: 3rem;
+    }
+    .upload-cta h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; }
+    .upload-cta p { font-size: 0.92rem; color: rgba(255,255,255,0.85); margin-bottom: 1.5rem; }
+    .upload-btn {
+      background: #fff; color: var(--accent); font-weight: 700;
+      padding: 0.9rem 2rem; border-radius: 2rem; display: inline-block;
+      text-decoration: none; font-size: 0.9rem;
+    }
+    @media (max-width: 700px) { .masonry-grid { columns: 2; } }
+    @media (max-width: 480px) { .masonry-grid { columns: 1; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">OVA</a>
+  <ul class="nav-links">
+    <li><a href="profile.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="photos.html" class="active">Gallery</a></li>
+  </ul>
+  <a href="mailto:victor.adedigba@example.com" class="nav-cta">Get in Touch</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Visual Story</div>
+  <h1 class="page-title">Photo Gallery</h1>
+  <p class="page-subtitle">Moments captured — from research labs and conferences to travels and life in Paris.</p>
+</div>
+
+<div class="content">
+  <div class="gallery-intro">
+    <div class="gallery-intro-icon">📸</div>
+    <div class="gallery-intro-text">
+      This gallery showcases moments from my academic and personal journey — research presentations, 
+      lab work, conference participation, travels across Europe, and life as a Nigerian researcher in Paris. 
+      Photos are being added as my story unfolds.
+    </div>
+  </div>
+
+  <div class="gallery-categories">
+    <button class="gal-cat-btn active">All</button>
+    <button class="gal-cat-btn">Research & Lab</button>
+    <button class="gal-cat-btn">Conferences</button>
+    <button class="gal-cat-btn">Paris Life</button>
+    <button class="gal-cat-btn">Travel</button>
+    <button class="gal-cat-btn">Community</button>
+  </div>
+
+  <div class="masonry-grid">
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#16213e);min-height:260px;color:#aaa;">
+          <div class="gallery-placeholder-icon">🔬</div>
+          <div class="gallery-placeholder-label">Research Lab</div>
+          <div class="gallery-placeholder-sub">ISEP Paris · 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#0f3460,#533483);min-height:180px;color:#aaa;">
+          <div class="gallery-placeholder-icon">🗼</div>
+          <div class="gallery-placeholder-label">Paris Life</div>
+          <div class="gallery-placeholder-sub">La Tour Eiffel</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#134e4a,#0f766e);min-height:220px;color:#aaa;">
+          <div class="gallery-placeholder-icon">📡</div>
+          <div class="gallery-placeholder-label">Conference</div>
+          <div class="gallery-placeholder-sub">IEEE Network · 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#7c3aed,#a855f7);min-height:200px;color:#aaa;">
+          <div class="gallery-placeholder-icon">🤝</div>
+          <div class="gallery-placeholder-label">Community</div>
+          <div class="gallery-placeholder-sub">Nigerian STEM Diaspora</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#b45309,#d97706);min-height:250px;color:#aaa;">
+          <div class="gallery-placeholder-icon">🌍</div>
+          <div class="gallery-placeholder-label">Travel</div>
+          <div class="gallery-placeholder-sub">Europe Explorations</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#065f46,#059669);min-height:190px;color:#aaa;">
+          <div class="gallery-placeholder-icon">🎓</div>
+          <div class="gallery-placeholder-label">Academic</div>
+          <div class="gallery-placeholder-sub">Sorbonne University</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#991b1b,#e8501a);min-height:230px;color:#aaa;">
+          <div class="gallery-placeholder-icon">💻</div>
+          <div class="gallery-placeholder-label">Hackathon</div>
+          <div class="gallery-placeholder-sub">AI Challenge · 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#1e3a5f,#2563eb);min-height:170px;color:#aaa;">
+          <div class="gallery-placeholder-icon">📖</div>
+          <div class="gallery-placeholder-label">Library</div>
+          <div class="gallery-placeholder-sub">Research Time</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-item-inner">
+        <div class="gallery-placeholder" style="background:linear-gradient(135deg,#4c1d95,#7c3aed);min-height:210px;color:#aaa;">
+          <div class="gallery-placeholder-icon">🌃</div>
+          <div class="gallery-placeholder-label">Paris by Night</div>
+          <div class="gallery-placeholder-sub">City of Lights</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="upload-cta">
+    <h3>📸 Add Your Photos</h3>
+    <p>To add real photos to this gallery, simply replace the placeholder divs in <code style="background:rgba(255,255,255,0.2);padding:0.2rem 0.5rem;border-radius:4px;">photos.html</code> with <code style="background:rgba(255,255,255,0.2);padding:0.2rem 0.5rem;border-radius:4px;">&lt;img&gt;</code> tags pointing to your images, or update the image paths in the gallery section. The masonry layout will adapt automatically.</p>
+    <a href="mailto:victor.adedigba@example.com" class="upload-btn">Get in Touch</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-top">
+    <span class="footer-name">Oluwatimileyin Victor Adedigba</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </div>
+  <p>© 2025 Oluwatimileyin Victor Adedigba</p>
+</footer>
+</body>
+</html>

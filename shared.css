@@ -1,0 +1,125 @@
+/* Shared styles for all sub-pages */
+:root {
+  --ink: #0f0e0d;
+  --cream: #faf8f4;
+  --accent: #e8501a;
+  --gold: #d4a017;
+  --teal: #0f766e;
+  --mid: #6b6560;
+  --card-bg: #ffffff;
+  --border: #e8e3db;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.1rem 3rem;
+  background: rgba(250,248,244,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-logo {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem; font-weight: 700;
+  color: var(--accent); letter-spacing: 0.05em;
+  text-decoration: none;
+}
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  font-size: 0.85rem; font-weight: 500; color: var(--ink);
+  text-decoration: none; letter-spacing: 0.03em; transition: color 0.2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--accent); }
+.nav-cta {
+  background: var(--accent); color: #fff;
+  padding: 0.55rem 1.4rem; border-radius: 2rem;
+  font-size: 0.83rem; font-weight: 600; text-decoration: none;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: #c43e10; }
+
+.page-hero {
+  padding: 8rem 3rem 4rem;
+  max-width: 1300px; margin: 0 auto;
+  border-bottom: 1px solid var(--border);
+}
+.page-eyebrow {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.page-eyebrow::before { content: ''; display: block; width: 2rem; height: 2px; background: var(--accent); }
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  font-weight: 900; line-height: 1.1; margin-bottom: 1rem;
+}
+.page-subtitle {
+  font-size: 1.05rem; color: var(--mid); max-width: 600px; line-height: 1.7;
+}
+
+.content { max-width: 1300px; margin: 0 auto; padding: 4rem 3rem; }
+
+.section-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.73rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 0.5rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.section-label::after { content: ''; flex: 1; max-width: 3rem; height: 1px; background: var(--accent); }
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 900;
+  margin-bottom: 2rem; line-height: 1.15;
+}
+
+.card {
+  background: var(--card-bg); border: 1px solid var(--border);
+  border-radius: 16px; padding: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+
+.tag {
+  display: inline-block;
+  background: rgba(232,80,26,0.1); color: var(--accent);
+  border-radius: 2rem; padding: 0.25rem 0.8rem;
+  font-size: 0.76rem; font-weight: 600;
+}
+.tag-blue { background: rgba(15,118,110,0.1); color: var(--teal); }
+.tag-gold { background: rgba(212,160,23,0.15); color: #9a7200; }
+
+footer {
+  background: var(--ink); color: #888;
+  text-align: center; padding: 2.5rem;
+  font-size: 0.83rem; margin-top: 4rem;
+}
+footer a { color: var(--accent); text-decoration: none; }
+.footer-top {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1200px; margin: 0 auto 1.5rem; flex-wrap: wrap; gap: 1rem;
+}
+.footer-name {
+  font-family: 'Playfair Display', serif; font-size: 1.2rem;
+  font-weight: 700; color: #fff;
+}
+.footer-links { display: flex; gap: 2rem; list-style: none; }
+.footer-links a { color: #888; text-decoration: none; font-size: 0.83rem; }
+.footer-links a:hover { color: var(--accent); }
+
+@media (max-width: 900px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { display: none; }
+  .page-hero { padding: 7rem 1.5rem 3rem; }
+  .content { padding: 3rem 1.5rem; }
+}

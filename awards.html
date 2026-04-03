@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awards — Oluwatimileyin Victor Adedigba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .award-hero {
+      background: linear-gradient(135deg, #d4a017 0%, #b8860b 60%, #8b6914 100%);
+      border-radius: 20px; padding: 3rem; color: #fff; margin-bottom: 3rem;
+      display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center;
+    }
+    .award-hero-icon { font-size: 6rem; text-align: center; }
+    .award-hero-title { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900; margin-bottom: 0.8rem; }
+    .award-hero-desc { font-size: 0.95rem; color: rgba(255,255,255,0.85); line-height: 1.7; }
+    .awards-timeline { position: relative; padding-left: 3rem; }
+    .awards-timeline::before { content: ''; position: absolute; left: 1rem; top: 0; bottom: 0; width: 2px; background: var(--gold); }
+    .award-item {
+      position: relative; margin-bottom: 2.5rem;
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 16px; padding: 2rem;
+    }
+    .award-item::before {
+      content: '🏆'; position: absolute; left: -3.5rem;
+      top: 1.5rem; font-size: 1.4rem;
+      background: var(--cream); padding: 0.2rem;
+    }
+    .award-year {
+      font-family: 'Space Mono', monospace; font-size: 0.78rem;
+      letter-spacing: 0.1em; color: var(--gold); margin-bottom: 0.5rem;
+    }
+    .award-name {
+      font-family: 'Playfair Display', serif; font-size: 1.4rem;
+      font-weight: 700; margin-bottom: 0.4rem;
+    }
+    .award-org { font-size: 0.9rem; color: var(--accent); font-weight: 600; margin-bottom: 0.8rem; }
+    .award-desc { font-size: 0.9rem; color: #555; line-height: 1.7; }
+    .achievement-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .ach-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.5rem; text-align: center;
+    }
+    .ach-num { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 900; color: var(--accent); }
+    .ach-label { font-size: 0.82rem; color: var(--mid); margin-top: 0.3rem; }
+    @media (max-width: 700px) {
+      .award-hero { grid-template-columns: 1fr; }
+      .achievement-grid { grid-template-columns: 1fr 1fr; }
+      .awards-timeline { padding-left: 2rem; }
+      .award-item::before { left: -2.5rem; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">OVA</a>
+  <ul class="nav-links">
+    <li><a href="profile.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="awards.html" class="active">Awards</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="photos.html">Gallery</a></li>
+  </ul>
+  <a href="mailto:victor.adedigba@example.com" class="nav-cta">Get in Touch</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Recognition</div>
+  <h1 class="page-title">Awards &amp; Achievements</h1>
+  <p class="page-subtitle">Milestones, scholarships and recognitions that mark a commitment to excellence in research and engineering.</p>
+</div>
+
+<div class="content">
+
+  <div class="achievement-grid">
+    <div class="ach-card">
+      <div class="ach-num">2×</div>
+      <div class="ach-label">PTDF Scholarships Awarded</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-num">7+</div>
+      <div class="ach-label">Years of Professional Experience</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-num">3</div>
+      <div class="ach-label">Disciplines Mastered</div>
+    </div>
+    <div class="ach-card">
+      <div class="ach-num">Paris</div>
+      <div class="ach-label">Currently Based · Sorbonne</div>
+    </div>
+  </div>
+
+  <div class="award-hero">
+    <div class="award-hero-icon">🏆</div>
+    <div>
+      <div class="award-hero-title">PTDF Overseas Scholarship Scheme</div>
+      <div class="award-hero-desc">
+        The Petroleum Technology Development Fund (PTDF) Overseas Scholarship Scheme is one of Nigeria's 
+        most prestigious and competitive academic fellowships, awarded to exceptional individuals to pursue 
+        world-class postgraduate education in strategic disciplines. Being awarded this scholarship 
+        <strong style="color:#fff;">twice</strong> — once for an MSc and once for a PhD — is a rare distinction 
+        reflecting consistent academic excellence and professional promise.
+      </div>
+    </div>
+  </div>
+
+  <div class="section-label">Timeline</div>
+  <h2 class="section-title">Awards & Scholarships</h2>
+
+  <div class="awards-timeline">
+
+    <div class="award-item">
+      <div class="award-year">2025</div>
+      <div class="award-name">PTDF PhD Overseas Scholarship — OSS Category</div>
+      <div class="award-org">Petroleum Technology Development Fund (PTDF), Nigeria</div>
+      <div class="award-desc">
+        Awarded the prestigious PTDF Overseas Scholarship for PhD studies in the Overseas Scholarship Scheme (OSS) 
+        category. This scholarship supports doctoral research at leading international institutions. Currently used 
+        to fund PhD research in Applied AI at Sorbonne University / ISEP Paris, focusing on Explainable AI and 
+        Large Language Models for O-RAN self-healing systems.
+      </div>
+    </div>
+
+    <div class="award-item">
+      <div class="award-year">2022</div>
+      <div class="award-name">PTDF MSc Overseas Scholarship — OSS Category</div>
+      <div class="award-org">Petroleum Technology Development Fund (PTDF), Nigeria</div>
+      <div class="award-desc">
+        First PTDF scholarship award, granted for the MSc Overseas Scholarship Scheme (OSS) category. 
+        This competitive award recognises outstanding Nigerian scholars and funds advanced postgraduate 
+        studies abroad in priority technical disciplines. A testament to academic excellence and the 
+        commitment to bringing world-class expertise back to Nigeria's energy and technology ecosystem.
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:3rem;">
+    <div class="section-label">Professional Milestones</div>
+    <h2 class="section-title">Career Highlights</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.8rem;">🛢️</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.4rem;">Reservoir Engineer, Oil & Gas</div>
+        <div style="font-size:0.85rem;color:var(--mid);">3 years of field development and simulation work in Nigeria's petroleum sector — reservoir modelling, production forecasting and field development planning.</div>
+      </div>
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.8rem;">📊</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.4rem;">Data Analyst & Engineer</div>
+        <div style="font-size:0.85rem;color:var(--mid);">Two years in data roles — building analytics dashboards, ETL pipelines, and data infrastructure for industrial and enterprise clients.</div>
+      </div>
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.8rem;">🔬</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.4rem;">AI Researcher, Sorbonne / ISEP</div>
+        <div style="font-size:0.85rem;color:var(--mid);">PhD researcher at the EDITE doctoral school, advancing XAI and LLMs for autonomous network management in Open RAN environments.</div>
+      </div>
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.8rem;">🇫🇷</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.4rem;">International Research in Paris</div>
+        <div style="font-size:0.85rem;color:var(--mid);">Pursuing cutting-edge doctoral research at one of Europe's most prestigious research institutions, bringing a cross-disciplinary perspective from energy to AI.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-top">
+    <span class="footer-name">Oluwatimileyin Victor Adedigba</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </div>
+  <p>© 2025 Oluwatimileyin Victor Adedigba</p>
+</footer>
+</body>
+</html>

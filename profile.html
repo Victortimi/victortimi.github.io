@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — Oluwatimileyin Victor Adedigba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .profile-grid { display: grid; grid-template-columns: 340px 1fr; gap: 3rem; align-items: start; }
+    .profile-sidebar { position: sticky; top: 100px; }
+    .profile-img {
+      width: 100%; aspect-ratio: 1; object-fit: cover;
+      border-radius: 20px; margin-bottom: 1.5rem;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    }
+    .profile-contact { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1.5rem; }
+    .contact-item {
+      display: flex; align-items: center; gap: 0.7rem;
+      font-size: 0.85rem; color: var(--mid);
+    }
+    .contact-item a { color: var(--accent); text-decoration: none; }
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .skill-cat { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.3rem; }
+    .skill-cat-title { font-weight: 600; font-size: 0.88rem; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem; }
+    .skill-list { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skill-pill {
+      background: rgba(232,80,26,0.08); color: var(--accent);
+      border-radius: 2rem; padding: 0.2rem 0.7rem; font-size: 0.75rem; font-weight: 500;
+    }
+    .skill-pill.teal { background: rgba(15,118,110,0.1); color: var(--teal); }
+    .skill-pill.gold { background: rgba(212,160,23,0.12); color: #9a7200; }
+    .edu-item { border-left: 3px solid var(--accent); padding-left: 1.2rem; margin-bottom: 2rem; }
+    .edu-degree { font-weight: 700; font-size: 1rem; }
+    .edu-school { color: var(--accent); font-size: 0.9rem; margin: 0.2rem 0; }
+    .edu-year { font-size: 0.8rem; color: var(--mid); }
+    @media (max-width: 900px) {
+      .profile-grid { grid-template-columns: 1fr; }
+      .profile-sidebar { position: static; }
+      .profile-img { max-width: 280px; }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">OVA</a>
+  <ul class="nav-links">
+    <li><a href="profile.html" class="active">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="photos.html">Gallery</a></li>
+  </ul>
+  <a href="mailto:victor.adedigba@example.com" class="nav-cta">Get in Touch</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Profile</div>
+  <h1 class="page-title">About Me</h1>
+  <p class="page-subtitle">Engineer, researcher, data scientist — bridging energy and artificial intelligence.</p>
+</div>
+
+<div class="content">
+  <div class="profile-grid">
+    <aside class="profile-sidebar">
+      <img src="index.html" alt="Victor" class="profile-img" style="display:none" onerror="this.style.display='none'">
+      <div style="background:var(--ink);border-radius:20px;padding:2rem;color:#fff;margin-bottom:1.5rem;">
+        <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:700;">Oluwatimileyin<br>Victor Adedigba</div>
+        <div style="margin-top:0.5rem;font-size:0.85rem;color:#aaa;">Applied AI Researcher</div>
+        <div style="margin-top:0.3rem;font-size:0.82rem;color:var(--accent);">Sorbonne University / ISEP Paris</div>
+        <div style="margin-top:1.5rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <span style="background:rgba(255,255,255,0.1);border-radius:2rem;padding:0.25rem 0.7rem;font-size:0.75rem;color:#ddd;">XAI</span>
+          <span style="background:rgba(255,255,255,0.1);border-radius:2rem;padding:0.25rem 0.7rem;font-size:0.75rem;color:#ddd;">LLMs</span>
+          <span style="background:rgba(255,255,255,0.1);border-radius:2rem;padding:0.25rem 0.7rem;font-size:0.75rem;color:#ddd;">O-RAN</span>
+          <span style="background:rgba(255,255,255,0.1);border-radius:2rem;padding:0.25rem 0.7rem;font-size:0.75rem;color:#ddd;">Data Science</span>
+          <span style="background:rgba(255,255,255,0.1);border-radius:2rem;padding:0.25rem 0.7rem;font-size:0.75rem;color:#ddd;">Petroleum Eng.</span>
+        </div>
+      </div>
+      <div class="profile-contact">
+        <div class="contact-item">📍 Paris, France</div>
+        <div class="contact-item">🏛️ Sorbonne University / ISEP</div>
+        <div class="contact-item">✉️ <a href="mailto:victor.adedigba@example.com">Email Me</a></div>
+        <div class="contact-item">🔗 <a href="https://linkedin.com" target="_blank">LinkedIn</a></div>
+        <div class="contact-item">🎓 <a href="https://scholar.google.com" target="_blank">Google Scholar</a></div>
+        <div class="contact-item">📄 <a href="https://researchgate.net" target="_blank">ResearchGate</a></div>
+      </div>
+    </aside>
+
+    <main>
+      <div style="margin-bottom:3rem;">
+        <div class="section-label">Biography</div>
+        <h2 class="section-title">Who I Am</h2>
+        <div style="font-size:1rem;line-height:1.85;color:#333;">
+          <p style="margin-bottom:1.2rem;">
+            I am an Applied AI Researcher and Petroleum & Energy Engineer with over seven years of experience 
+            spanning reservoir simulation, data analytics, data engineering, and frontier AI research. My 
+            career has followed an unconventional but purposeful arc — from modelling oil reservoirs deep 
+            underground to designing intelligent systems for the telecommunications networks of tomorrow.
+          </p>
+          <p style="margin-bottom:1.2rem;">
+            Currently pursuing my PhD at <strong>Sorbonne University / ISEP Paris</strong> within the 
+            <strong>EDITE doctoral school</strong>, I work at the intersection of Explainable Artificial 
+            Intelligence (XAI) and Large Language Models (LLMs), applying them to one of the most 
+            challenging engineering problems of our time: making Open Radio Access Networks 
+            (O-RAN) autonomous and self-healing.
+          </p>
+          <p>
+            My research vision is clear — AI systems must not only perform, they must explain themselves, 
+            reason over structured knowledge, and act in ways that engineers can understand and trust. 
+            I am a two-time recipient of the prestigious <strong>PTDF Overseas Scholarship</strong>, 
+            awarded for both my MSc (2022) and my ongoing PhD (2025).
+          </p>
+        </div>
+      </div>
+
+      <div style="margin-bottom:3rem;">
+        <div class="section-label">Education</div>
+        <h2 class="section-title">Academic Background</h2>
+        <div class="edu-item">
+          <div class="edu-degree">PhD — Applied Artificial Intelligence</div>
+          <div class="edu-school">Sorbonne University / ISEP Paris · EDITE Lab</div>
+          <div class="edu-year">2023 — Present · Paris, France</div>
+          <div style="margin-top:0.5rem;font-size:0.88rem;color:#555;">
+            Focus: XAI & LLMs for O-RAN Self-Healing: Anomaly Detection, Root-Cause Analysis, and Knowledge-Grounded Remediation
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">MSc — Petroleum Engineering</div>
+          <div class="edu-school">Postgraduate Institution · PTDF Scholarship Holder</div>
+          <div class="edu-year">2022 · Overseas Scholarship Scheme</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-degree">BEng — Petroleum & Energy Engineering</div>
+          <div class="edu-school">Nigeria</div>
+          <div class="edu-year">Undergraduate</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Skills</div>
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-cat">
+            <div class="skill-cat-title">🤖 AI & Machine Learning</div>
+            <div class="skill-list">
+              <span class="skill-pill">XAI / Explainability</span>
+              <span class="skill-pill">LLMs</span>
+              <span class="skill-pill">Deep Learning</span>
+              <span class="skill-pill">Anomaly Detection</span>
+              <span class="skill-pill">Knowledge Graphs</span>
+              <span class="skill-pill">NLP</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-title">📊 Data Science & Analytics</div>
+            <div class="skill-list">
+              <span class="skill-pill teal">Python</span>
+              <span class="skill-pill teal">Pandas</span>
+              <span class="skill-pill teal">Scikit-learn</span>
+              <span class="skill-pill teal">TensorFlow</span>
+              <span class="skill-pill teal">PyTorch</span>
+              <span class="skill-pill teal">Power BI</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-title">🔧 Data Engineering</div>
+            <div class="skill-list">
+              <span class="skill-pill gold">SQL</span>
+              <span class="skill-pill gold">ETL Pipelines</span>
+              <span class="skill-pill gold">Apache Spark</span>
+              <span class="skill-pill gold">Data Warehousing</span>
+              <span class="skill-pill gold">Cloud (Azure/GCP)</span>
+            </div>
+          </div>
+          <div class="skill-cat">
+            <div class="skill-cat-title">⚡ Energy Engineering</div>
+            <div class="skill-list">
+              <span class="skill-pill" style="background:rgba(124,58,237,0.1);color:#7c3aed;">Reservoir Simulation</span>
+              <span class="skill-pill" style="background:rgba(124,58,237,0.1);color:#7c3aed;">Field Development</span>
+              <span class="skill-pill" style="background:rgba(124,58,237,0.1);color:#7c3aed;">Eclipse / Petrel</span>
+              <span class="skill-pill" style="background:rgba(124,58,237,0.1);color:#7c3aed;">Petroleum Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <span class="footer-name">Oluwatimileyin Victor Adedigba</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="research.html">Research</a></li>
+    </ul>
+  </div>
+  <p>© 2025 Oluwatimileyin Victor Adedigba · ISEP Paris / Sorbonne University</p>
+</footer>
+</body>
+</html>

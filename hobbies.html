@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hobbies — Oluwatimileyin Victor Adedigba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .hobbies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+    .hobby-card {
+      background: var(--card-bg); border-radius: 20px; overflow: hidden;
+      border: 1px solid var(--border); transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .hobby-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+    .hobby-banner {
+      height: 120px; display: flex; align-items: center; justify-content: center;
+      font-size: 4rem;
+    }
+    .hobby-body { padding: 1.5rem; }
+    .hobby-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .hobby-desc { font-size: 0.88rem; color: #555; line-height: 1.65; }
+    .fun-fact-box {
+      background: var(--ink); border-radius: 16px; padding: 2rem;
+      margin-top: 2rem; color: #fff;
+    }
+    .fun-fact-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 1.2rem; color: var(--gold); }
+    .fun-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .fun-fact { background: rgba(255,255,255,0.06); border-radius: 10px; padding: 1rem; }
+    .fun-fact-num { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 900; color: var(--accent); }
+    .fun-fact-label { font-size: 0.82rem; color: #aaa; margin-top: 0.2rem; }
+    @media (max-width: 700px) { .fun-facts { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">OVA</a>
+  <ul class="nav-links">
+    <li><a href="profile.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="hobbies.html" class="active">Hobbies</a></li>
+    <li><a href="photos.html">Gallery</a></li>
+  </ul>
+  <a href="mailto:victor.adedigba@example.com" class="nav-cta">Get in Touch</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Life Beyond the Lab</div>
+  <h1 class="page-title">Hobbies &amp; Interests</h1>
+  <p class="page-subtitle">The pursuits, passions, and pastimes that keep curiosity alive and the mind sharp.</p>
+</div>
+
+<div class="content">
+  <div class="section-label">Interests</div>
+  <h2 class="section-title">What I Love Outside Work</h2>
+
+  <div class="hobbies-grid">
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">📚</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Reading & Continuous Learning</div>
+        <div class="hobby-desc">A voracious reader across technical papers, popular science books, and African literature. From the latest arXiv preprints on AI to Chinua Achebe — there's always something on the nightstand.</div>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#0f3460,#533483);">⚽</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Football</div>
+        <div class="hobby-desc">A passionate football fan who follows the beautiful game with genuine enthusiasm. Whether playing casual 5-a-sides with colleagues in Paris or following the Nigerian Super Eagles — football is a constant.</div>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#134e4a,#0f766e);">🌍</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Travel & Cultural Exploration</div>
+        <div class="hobby-desc">Living in Paris as a Nigerian researcher offers an extraordinary vantage point. Exploring European cities, tasting new cuisines, and understanding diverse cultures feeds a deep curiosity about the human experience.</div>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#7c3aed,#a855f7);">💻</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Coding & Building</div>
+        <div class="hobby-desc">When not doing formal research, I enjoy building personal tools, experimenting with new APIs, and tinkering with creative programming projects — from data visualisations to mini LLM experiments.</div>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#b45309,#d97706);">🎵</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Music & Afrobeats</div>
+        <div class="hobby-desc">Music is fuel. Afrobeats, Highlife and contemporary jazz are constant companions in the lab. There's something about a good rhythm that makes even the toughest debugging sessions more bearable.</div>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#065f46,#059669);">🧘</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Fitness & Wellbeing</div>
+        <div class="hobby-desc">Maintaining physical and mental health is a serious hobby. Regular gym sessions, long walks along the Seine, and mindful practices help sustain the energy and focus that research demands.</div>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#991b1b,#dc2626);">🗣️</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Mentoring & Community</div>
+        <div class="hobby-desc">Passionate about giving back — mentoring younger students interested in AI and data science, sharing lessons learned, and being part of the growing Nigerian STEM diaspora community in Europe.</div>
+      </div>
+    </div>
+
+    <div class="hobby-card">
+      <div class="hobby-banner" style="background:linear-gradient(135deg,#1e3a5f,#2563eb);">✍️</div>
+      <div class="hobby-body">
+        <div class="hobby-title">Writing & Knowledge Sharing</div>
+        <div class="hobby-desc">Believe strongly that good science must be communicated clearly. Enjoy writing technical summaries, blog-style explainers, and breaking down complex AI concepts for non-specialist audiences.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="fun-fact-box">
+    <div class="fun-fact-title">⚡ Quick Facts</div>
+    <div class="fun-facts">
+      <div class="fun-fact">
+        <div class="fun-fact-num">🇫🇷</div>
+        <div class="fun-fact-label">Based in Paris, originally from Nigeria</div>
+      </div>
+      <div class="fun-fact">
+        <div class="fun-fact-num">3+</div>
+        <div class="fun-fact-label">Languages in progress (English, French, Yoruba)</div>
+      </div>
+      <div class="fun-fact">
+        <div class="fun-fact-num">☕</div>
+        <div class="fun-fact-label">Coffee-powered researcher — always experimenting with brews</div>
+      </div>
+      <div class="fun-fact">
+        <div class="fun-fact-num">📍</div>
+        <div class="fun-fact-label">Paris explorer — new arrondissement, new discovery every weekend</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-top">
+    <span class="footer-name">Oluwatimileyin Victor Adedigba</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="photos.html">Gallery</a></li>
+    </ul>
+  </div>
+  <p>© 2025 Oluwatimileyin Victor Adedigba</p>
+</footer>
+</body>
+</html>

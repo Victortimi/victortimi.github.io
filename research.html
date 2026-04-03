@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Oluwatimileyin Victor Adedigba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .research-hero-box {
+      background: var(--ink); border-radius: 20px; padding: 3rem;
+      margin-bottom: 3rem; color: #fff;
+      background-image: radial-gradient(ellipse at top right, rgba(232,80,26,0.2) 0%, transparent 60%);
+    }
+    .rh-badge {
+      display: inline-flex; gap: 0.6rem; align-items: center;
+      background: var(--accent); color: #fff; border-radius: 2rem;
+      padding: 0.4rem 1rem; font-size: 0.78rem; font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .rh-title {
+      font-family: 'Playfair Display', serif; font-size: 1.8rem;
+      font-weight: 900; line-height: 1.25; margin-bottom: 1.2rem;
+    }
+    .rh-abstract { font-size: 0.95rem; color: #ccc; line-height: 1.8; margin-bottom: 1.5rem; }
+    .rh-keyword-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+    .rh-kw {
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 2rem; padding: 0.3rem 0.9rem;
+      font-size: 0.78rem; color: #ddd;
+    }
+    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 3rem; }
+    .area-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.5rem; text-align: center;
+    }
+    .area-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+    .area-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.4rem; }
+    .area-desc { font-size: 0.82rem; color: var(--mid); line-height: 1.5; }
+    .pub-item {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 14px; padding: 1.8rem; margin-bottom: 1.2rem;
+    }
+    .pub-type {
+      font-family: 'Space Mono', monospace; font-size: 0.7rem;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .pub-title { font-weight: 700; font-size: 1.05rem; margin-bottom: 0.5rem; }
+    .pub-authors { font-size: 0.85rem; color: var(--mid); margin-bottom: 0.4rem; }
+    .pub-venue { font-size: 0.83rem; color: var(--teal); font-style: italic; }
+    @media (max-width: 700px) { .areas-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">OVA</a>
+  <ul class="nav-links">
+    <li><a href="profile.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="research.html" class="active">Research</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="photos.html">Gallery</a></li>
+  </ul>
+  <a href="mailto:victor.adedigba@example.com" class="nav-cta">Get in Touch</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Academic Work</div>
+  <h1 class="page-title">Research &amp; Publications</h1>
+  <p class="page-subtitle">Advancing the frontier of explainable AI, large language models and autonomous industrial systems.</p>
+</div>
+
+<div class="content">
+
+  <!-- CURRENT RESEARCH -->
+  <div class="section-label">Current Research</div>
+  <h2 class="section-title">PhD Dissertation Focus</h2>
+  <div class="research-hero-box">
+    <div class="rh-badge">🔬 Active Research · ISEP Paris / Sorbonne University</div>
+    <div class="rh-title">Explainable Artificial Intelligence and Large Language Models for O-RAN Self-Healing: Anomaly Detection, Root-Cause Analysis, and Knowledge-Grounded Remediation</div>
+    <div class="rh-abstract">
+      Open Radio Access Networks (O-RAN) represent a paradigm shift in mobile network architecture, 
+      disaggregating previously monolithic systems into interoperable components. While this openness 
+      enables innovation, it also introduces complex fault scenarios that require intelligent, autonomous 
+      management. This research develops XAI-driven frameworks and LLM-powered systems that can detect 
+      network anomalies in real time, diagnose root causes through interpretable reasoning chains, and 
+      generate knowledge-grounded remediation strategies — all in a manner that network operators can 
+      understand, verify, and trust. The work sits at the intersection of AI transparency, natural 
+      language understanding, and telecommunications engineering.
+    </div>
+    <div class="rh-keyword-row">
+      <span class="rh-kw">Explainable AI (XAI)</span>
+      <span class="rh-kw">Large Language Models</span>
+      <span class="rh-kw">O-RAN</span>
+      <span class="rh-kw">Anomaly Detection</span>
+      <span class="rh-kw">Root-Cause Analysis</span>
+      <span class="rh-kw">Knowledge Graphs</span>
+      <span class="rh-kw">RAG</span>
+      <span class="rh-kw">Self-Healing Networks</span>
+      <span class="rh-kw">Telecommunications AI</span>
+    </div>
+  </div>
+
+  <!-- RESEARCH AREAS -->
+  <div class="section-label" style="margin-top:1rem;">Areas</div>
+  <h2 class="section-title">Research Themes</h2>
+  <div class="areas-grid">
+    <div class="area-card">
+      <div class="area-icon">🔍</div>
+      <div class="area-title">Explainable AI</div>
+      <div class="area-desc">Making black-box models transparent through SHAP, attention mechanisms, and interpretable architectures.</div>
+    </div>
+    <div class="area-card">
+      <div class="area-icon">🤖</div>
+      <div class="area-title">Large Language Models</div>
+      <div class="area-desc">Applying LLMs to industrial diagnosis, knowledge retrieval, and human-intelligible remediation generation.</div>
+    </div>
+    <div class="area-card">
+      <div class="area-icon">📡</div>
+      <div class="area-title">O-RAN Systems</div>
+      <div class="area-desc">Intelligent management of Open RAN architecture — anomaly detection, self-optimization and fault recovery.</div>
+    </div>
+    <div class="area-card">
+      <div class="area-icon">🧠</div>
+      <div class="area-title">Knowledge Graphs</div>
+      <div class="area-desc">Structured domain knowledge for grounding AI reasoning in telecommunications and energy domains.</div>
+    </div>
+    <div class="area-card">
+      <div class="area-icon">⚡</div>
+      <div class="area-title">AI for Energy</div>
+      <div class="area-desc">Machine learning applied to petroleum systems, reservoir modelling, and energy infrastructure optimisation.</div>
+    </div>
+    <div class="area-card">
+      <div class="area-icon">📊</div>
+      <div class="area-title">Time Series & Anomalies</div>
+      <div class="area-desc">Multivariate anomaly detection in complex industrial time series with concept drift adaptation.</div>
+    </div>
+  </div>
+
+  <!-- PUBLICATIONS -->
+  <div class="section-label">Publications</div>
+  <h2 class="section-title">Academic Output</h2>
+
+  <div class="pub-item">
+    <div class="pub-type">📄 Journal Article / Conference Paper — In Progress</div>
+    <div class="pub-title">XAI-Driven Anomaly Detection for O-RAN: A Framework for Interpretable Fault Diagnosis</div>
+    <div class="pub-authors">Adedigba, O.V. et al.</div>
+    <div class="pub-venue">Target: IEEE Transactions on Network and Service Management / IEEE GLOBECOM — 2025</div>
+  </div>
+
+  <div class="pub-item">
+    <div class="pub-type">📄 Conference Paper — In Preparation</div>
+    <div class="pub-title">Knowledge-Grounded LLM Remediation for Autonomous O-RAN Self-Healing</div>
+    <div class="pub-authors">Adedigba, O.V. et al.</div>
+    <div class="pub-venue">Target: IEEE Communications Letters / ICASSP — 2025/2026</div>
+  </div>
+
+  <div class="pub-item">
+    <div class="pub-type">📄 Technical Report</div>
+    <div class="pub-title">Reservoir Simulation and Production Forecasting Using Machine Learning in Mature Oilfields</div>
+    <div class="pub-authors">Adedigba, O.V.</div>
+    <div class="pub-venue">MSc Thesis / Industry Report — 2022/2023</div>
+  </div>
+
+  <div style="background: rgba(232,80,26,0.06); border: 1px dashed rgba(232,80,26,0.3); border-radius: 12px; padding: 1.5rem; margin-top: 1rem;">
+    <p style="font-size:0.9rem; color:var(--mid);">
+      📌 Publication list is being updated as PhD work progresses. 
+      For the most current list, visit 
+      <a href="https://scholar.google.com" target="_blank" style="color:var(--accent);">Google Scholar</a> or 
+      <a href="https://researchgate.net" target="_blank" style="color:var(--accent);">ResearchGate</a>.
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-top">
+    <span class="footer-name">Oluwatimileyin Victor Adedigba</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </div>
+  <p>© 2025 Oluwatimileyin Victor Adedigba · ISEP Paris / Sorbonne University</p>
+</footer>
+</body>
+</html>

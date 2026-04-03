@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Oluwatimileyin Victor Adedigba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css">
+  <style>
+    .filter-bar { display: flex; gap: 0.7rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 0.5rem 1.2rem; border-radius: 2rem;
+      border: 1.5px solid var(--border); background: var(--card-bg);
+      font-size: 0.83rem; font-weight: 500; cursor: pointer;
+      transition: all 0.2s; color: var(--mid);
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent); color: #fff; border-color: var(--accent);
+    }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; }
+    .project-card {
+      background: var(--card-bg); border: 1px solid var(--border);
+      border-radius: 16px; padding: 0; overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .project-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.1); }
+    .project-header { padding: 1.5rem; border-bottom: 1px solid var(--border); }
+    .project-type {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      font-family: 'Space Mono', monospace; font-size: 0.7rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 0.8rem;
+    }
+    .project-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; }
+    .project-body { padding: 1.3rem 1.5rem; }
+    .project-desc { font-size: 0.88rem; color: #555; line-height: 1.65; margin-bottom: 1rem; }
+    .project-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .project-footer {
+      padding: 1rem 1.5rem; background: rgba(0,0,0,0.02);
+      border-top: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .project-link {
+      font-size: 0.82rem; color: var(--accent); font-weight: 600;
+      text-decoration: none; display: flex; align-items: center; gap: 0.3rem;
+    }
+    .type-ds { color: #e8501a; }
+    .type-da { color: #0f766e; }
+    .type-de { color: #7c3aed; }
+    .bar { width: 2rem; height: 2px; display: inline-block; vertical-align: middle; margin-right: 0.3rem; }
+    .bar-ds { background: #e8501a; }
+    .bar-da { background: #0f766e; }
+    .bar-de { background: #7c3aed; }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">OVA</a>
+  <ul class="nav-links">
+    <li><a href="profile.html">About</a></li>
+    <li><a href="projects.html" class="active">Projects</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="awards.html">Awards</a></li>
+    <li><a href="hobbies.html">Hobbies</a></li>
+    <li><a href="photos.html">Gallery</a></li>
+  </ul>
+  <a href="mailto:victor.adedigba@example.com" class="nav-cta">Get in Touch</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-eyebrow">Portfolio</div>
+  <h1 class="page-title">Data Projects</h1>
+  <p class="page-subtitle">A collection of work spanning data science, analytics, engineering, and AI for industrial applications.</p>
+</div>
+
+<div class="content">
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="ds">Data Science</button>
+    <button class="filter-btn" data-filter="da">Data Analytics</button>
+    <button class="filter-btn" data-filter="de">Data Engineering</button>
+  </div>
+
+  <div class="projects-grid" id="projectsGrid">
+
+    <div class="project-card" data-type="ds">
+      <div class="project-header">
+        <div class="project-type type-ds"><span class="bar bar-ds"></span>Data Science</div>
+        <div class="project-title">Anomaly Detection in Telecom Networks</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Developed ML pipelines for real-time anomaly detection in O-RAN network traffic. Integrated SHAP-based explainability to make model decisions transparent to network engineers.</div>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">SHAP</span><span class="tag">Scikit-learn</span><span class="tag">O-RAN</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Research Project</span>
+        <a href="research.html" class="project-link">View Research ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="ds">
+      <div class="project-header">
+        <div class="project-type type-ds"><span class="bar bar-ds"></span>Data Science</div>
+        <div class="project-title">Reservoir Production Forecasting with ML</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Applied machine learning models (XGBoost, LSTM) to production history data for oil well performance prediction, reducing the need for costly full-physics simulation runs.</div>
+        <div class="project-tags">
+          <span class="tag">XGBoost</span><span class="tag">LSTM</span><span class="tag">Time Series</span><span class="tag">Energy</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Energy Sector</span>
+        <a href="#" class="project-link">Details ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="ds">
+      <div class="project-header">
+        <div class="project-type type-ds"><span class="bar bar-ds"></span>Data Science</div>
+        <div class="project-title">LLM-Powered Root-Cause Analysis</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Built a knowledge-grounded LLM framework for diagnosing network failures. The system retrieves relevant domain knowledge and generates human-readable remediation plans.</div>
+        <div class="project-tags">
+          <span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Knowledge Graphs</span><span class="tag">Telecom</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">PhD Research</span>
+        <a href="research.html" class="project-link">Research ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="da">
+      <div class="project-header">
+        <div class="project-type type-da"><span class="bar bar-da"></span>Data Analytics</div>
+        <div class="project-title">Oil Field Performance Dashboard</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Designed an interactive Power BI dashboard tracking KPIs for multi-well oil field operations — production rates, water cut trends, and injection volumes — enabling faster operational decisions.</div>
+        <div class="project-tags">
+          <span class="tag-blue tag">Power BI</span><span class="tag-blue tag">DAX</span><span class="tag-blue tag">SQL</span><span class="tag-blue tag">Energy</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Industry Project</span>
+        <a href="#" class="project-link">Details ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="da">
+      <div class="project-header">
+        <div class="project-type type-da"><span class="bar bar-da"></span>Data Analytics</div>
+        <div class="project-title">Telecoms Network KPI Analysis</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Statistical analysis of cellular network performance metrics to identify degradation patterns, geographic hotspots and temporal trends — informing proactive maintenance scheduling.</div>
+        <div class="project-tags">
+          <span class="tag-blue tag">Python</span><span class="tag-blue tag">Pandas</span><span class="tag-blue tag">Matplotlib</span><span class="tag-blue tag">Statistics</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Research Context</span>
+        <a href="#" class="project-link">Details ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="da">
+      <div class="project-header">
+        <div class="project-type type-da"><span class="bar bar-da"></span>Data Analytics</div>
+        <div class="project-title">Energy Sector Market Intelligence</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Exploratory data analysis of oil & gas market data — price volatility, production trends and supply-demand dynamics — to support strategic investment planning decisions.</div>
+        <div class="project-tags">
+          <span class="tag-blue tag">EDA</span><span class="tag-blue tag">Python</span><span class="tag-blue tag">Seaborn</span><span class="tag-blue tag">Business Intelligence</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Analytics</span>
+        <a href="#" class="project-link">Details ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="de">
+      <div class="project-header">
+        <div class="project-type type-de"><span class="bar bar-de"></span>Data Engineering</div>
+        <div class="project-title">Real-Time Network Data Pipeline</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Built a robust streaming data pipeline ingesting millions of O-RAN performance measurement records per hour, with automated quality checks, deduplication, and feature engineering for downstream ML.</div>
+        <div class="project-tags">
+          <span class="tag-gold tag">Apache Kafka</span><span class="tag-gold tag">Spark</span><span class="tag-gold tag">Python</span><span class="tag-gold tag">Cloud</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Research Infrastructure</span>
+        <a href="#" class="project-link">Details ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="de">
+      <div class="project-header">
+        <div class="project-type type-de"><span class="bar bar-de"></span>Data Engineering</div>
+        <div class="project-title">Petroleum Data Warehouse</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Designed and implemented a dimensional data warehouse for aggregating well logs, production history, and reservoir simulation outputs — enabling cross-field analytical queries at enterprise scale.</div>
+        <div class="project-tags">
+          <span class="tag-gold tag">SQL</span><span class="tag-gold tag">ETL</span><span class="tag-gold tag">Data Modelling</span><span class="tag-gold tag">Energy</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Industry</span>
+        <a href="#" class="project-link">Details ↗</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-type="de">
+      <div class="project-header">
+        <div class="project-type type-de"><span class="bar bar-de"></span>Data Engineering</div>
+        <div class="project-title">MLOps Pipeline for AI Models</div>
+      </div>
+      <div class="project-body">
+        <div class="project-desc">Developed an MLOps infrastructure for continuous training, validation and deployment of anomaly detection models, with automated drift monitoring and model versioning.</div>
+        <div class="project-tags">
+          <span class="tag-gold tag">MLOps</span><span class="tag-gold tag">Docker</span><span class="tag-gold tag">CI/CD</span><span class="tag-gold tag">ML Monitoring</span>
+        </div>
+      </div>
+      <div class="project-footer">
+        <span style="font-size:0.78rem;color:var(--mid);">Research</span>
+        <a href="#" class="project-link">Details ↗</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <span class="footer-name">Oluwatimileyin Victor Adedigba</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="profile.html">Profile</a></li>
+    </ul>
+  </div>
+  <p>© 2025 Oluwatimileyin Victor Adedigba</p>
+</footer>
+
+<script>
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        if (filter === 'all' || card.dataset.type === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
